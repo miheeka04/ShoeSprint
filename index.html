@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShoeSprint - Online Shoe Delivery</title>
+  <link rel="stylesheet" href="capstone.css">
+</head>
+<body>
+  <header>
+    <div class="logo">👟 ShoeSprint</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mens.html">Mens</a></li>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="kids.html">Kids</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Step into Style</h1>
+      <p>Fastest Online Shoe Delivery Service at Your Doorstep</p>
+      <button onclick="window.location.href='mens.html'">Shop Now</button>
+    </div>
+  </section>
+
+ 
+  <section id="about" class="about">
+    <h1>About Us</h1></section>
+    <div class="about-lower">
+    <p style="font-size: 40px;">
+      At <strong>ShoeSprint</strong>, we believe that comfort and fashion go hand in hand.
+      We deliver premium quality shoes right to your door with lightning-fast service.
+    </p></div>
+    <div class="about-img">
+    <img src="about.png" alt="About shoes">
+  </div></div>
+  </section>
+
+  
+  <section id="products" class="products">
+    <h2>Our Collection</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1600181953983-63173a0b4b6b?auto=format&fit=crop&w=400&q=60" alt="Running Shoes">
+        <h3>Running Shoes</h3>
+        <p>₹2,499</p>
+        <button onclick="buyProduct('Running Shoes')">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1606813902914-9b07e2a6a82f?auto=format&fit=crop&w=400&q=60" alt="Casual Sneakers">
+        <h3>Casual Sneakers</h3>
+        <p>₹1,999</p>
+        <button onclick="buyProduct('Casual Sneakers')">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1584735175097-719d848f8441?auto=format&fit=crop&w=400&q=60" alt="Formal Shoes">
+        <h3>Formal Shoes</h3>
+        <p>₹3,299</p>
+        <button onclick="buyProduct('Formal Shoes')">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-info">
+      <p>📞 +91 98765 43210</p>
+      <p>📧 support@shoesprint.com</p>
+      <p>🏠 Delhi, India</p>
+    </div>
+  </section>
+
+  
+  <footer>
+    <p>© 2025 ShoeSprint. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
